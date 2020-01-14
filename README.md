@@ -13,6 +13,8 @@ Process bisulfite sequencing data and performs epidriver inference.
 | depthT | promoter sequencing depth of tumor samples |
 | ncpgT | number of CpGs in promoter of tumor samples |
 
+*z-score normalization is performed to all the covariates in the input matrix.
+
 ## Usage
 pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
