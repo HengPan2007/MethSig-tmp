@@ -28,3 +28,13 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
 pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
+
+## Output table
+
+| Column | Description |
+| ------ | ----------- |
+| hugo | Hugo gene symbol |
+| rank | rank of each promoter based on its combined p value |
+| sampleSize | number of samples with enough sequencing coverage (at least 5 CpGs with minimum 10X coverage |
+| pvalue | combined p value |
+| padjust | Benjamini-Hochberg adjusted p value |
