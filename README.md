@@ -25,9 +25,9 @@ Promoter (defined as ± 2kb windows centered on Refseq transcription start site)
 If all the CpGs on a specific read are methylated, or all of the CpGs on a read are unmethylated, the read is classified as concordant; otherwise it is classified as discordant. At each CpG, the PDR is equal to the number of discordant reads that cover that location divided by the total number of read that cover that location. The PDR of promoter is given by averaging the values of individual CpGs, as calculated for all CpGs within the promoter of interest with read depth greater than 10 reads and that are covered by reads that contain at least 4 CpGs.
 
 ## Usage
-#### pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
+pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
-#### pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
+pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
 
 ## Output table
 
