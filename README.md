@@ -39,12 +39,12 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | NAReadCount |
 
 #### Make input matrix
-makeMatrix.R is used to make input matrix.
-Input: Z-score normalzied covariates matrix including 
+`makeMatrix.R` is used to make input matrix. Input files are Z-score normalzied covariates matrix (`CVMatrix-normalized.rds`) including dhcrN, pdrN, gexpN and reptime. Also, `DMC.(sample).txt` and `pdr.(sample).txt` are needed for each tumor in the cohort. Output file includes the following columns:
 
-#### Input matrix
-| Covariate | Description |
+| Column | Description |
 | ------ | ----------- |
+| hugo | hugo gene symbol |
+| id | tumor sample id |
 | dhcrN | promoter DHcR of normal samples |
 | pdrN | promoter PDR of normal samples |
 | gexpN | gene expression level of normal samples |
@@ -52,7 +52,6 @@ Input: Z-score normalzied covariates matrix including
 | pdrT | promoter PDR of tumor samples |
 | depthT | promoter sequencing depth of tumor samples |
 | ncpgT | number of CpGs in promoter of tumor samples |
-
 
 ## Usage
 pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
