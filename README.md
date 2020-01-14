@@ -2,7 +2,7 @@
 Process bisulfite sequencing data and performs epidriver inference.
 
 ## Getting Ready
-#### Required inputs
+#### Input matrix
 | Covariate | Description |
 | ------ | ----------- |
 | dhcrN | promoter DHcR of normal samples |
