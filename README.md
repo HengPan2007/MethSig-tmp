@@ -15,6 +15,9 @@ Process bisulfite sequencing data and performs epidriver inference.
 
 *z-score normalization is performed to all the covariates in the input matrix.
 
+#### RRBS data alignment and processing
+RRBS data were aligned and processed as described in our published book chapter (Pan et al., Cancer Systems Biology, 2018).
+
 #### DHcR
 Promoter (defined as ± 2kb windows centered on Refseq transcription start site) hypermethylation was measured using differentially hypermethylated cytosine ratio (DHcR), defined as the ratio of hypermethylated cytosines (HCs) to the total number of promoter CpGs profiled. HCs of each sample were defined as CpGs at which DNAme is statistically higher than the average DNAme of control samples (false discovery rate=20%, Chi-squared test). Only CpGs with read depth greater than 10 reads were included in the analysis. RRBS data of matched normal tissues were used as control samples.
 
@@ -23,6 +26,5 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 
 ## Usage
 pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
-
 
 pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
