@@ -26,7 +26,7 @@ Promoter (defined as ± 2kb windows centered on Refseq transcription start site)
 #### PDR
 If all the CpGs on a specific read are methylated, or all of the CpGs on a read are unmethylated, the read is classified as concordant; otherwise it is classified as discordant. At each CpG, the PDR is equal to the number of discordant reads that cover that location divided by the total number of read that cover that location. The PDR of promoter is given by averaging the values of individual CpGs, as calculated for all CpGs within the promoter of interest with read depth greater than 10 reads and that are covered by reads that contain at least 4 CpGs.
 
-`pdrCall_from_Bismark.py` can be used to call PDR of single CpG from bismark outputs (files starting with CpG_OB or CpG OT).
+`#### pdrCall_from_Bismark.py` can be used to call PDR of single CpG from bismark outputs (files starting with CpG_OB or CpG OT).
 
 #### Make input matrix
 makeMatrix.R is used to make input matrix.
