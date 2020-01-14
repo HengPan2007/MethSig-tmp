@@ -2,9 +2,6 @@
 Process bisulfite sequencing data and performs epidriver inference.
 
 ## Getting Ready
-
-## Usage
-pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 #### Required inputs
 | Covariate | Description |
 | ------ | ----------- |
@@ -15,5 +12,9 @@ pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and ev
 | pdrT | promoter PDR of tumor samples |
 | depthT | promoter sequencing depth of tumor samples |
 | ncpgT | number of CpGs in promoter of tumor samples |
+
+## Usage
+pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
+
 
 pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
