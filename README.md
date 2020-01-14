@@ -17,7 +17,7 @@ Promoter (defined as ± 2kb windows centered on Refseq transcription start site)
 | numC+numT in control |
 | numC in tumor |
 | numC+numT in tumor |
-| methylation ratio at CpG as methylation tumor / methylation control |
+| methylation ratio at CpG as tumor methylation / control methylation |
 | Chi-square pvalue |
 | adjusted pvalue |
 
