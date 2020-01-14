@@ -1,12 +1,10 @@
 # MethSig
 Process bisulfite sequencing data and performs epidriver inference.
 
-## Getting Ready
-
-#### RRBS data alignment and processing
+### RRBS data alignment and processing
 RRBS data were aligned and processed as described in our published book chapter (Pan et al., Cancer Systems Biology, 2018).
 
-#### DHcR
+### Calculate DHcR
 Promoter (defined as ± 2kb windows centered on Refseq transcription start site) hypermethylation was measured using differentially hypermethylated cytosine ratio (DHcR), defined as the ratio of hypermethylated cytosines (HCs) to the total number of promoter CpGs profiled. HCs of each sample were defined as CpGs at which DNAme is statistically higher than the average DNAme of control samples (false discovery rate=20%, Chi-squared test). Only CpGs with read depth greater than 10 reads were included in the analysis. RRBS data of matched normal tissues were used as control samples. 
 
 `DMC.(sample).txt` file can be used to calculate promoter DHcR, which is derived from the pipeline described in our published book chapter mentioned above. `DMC.(sample).txt` has the following columns
@@ -23,7 +21,7 @@ Promoter (defined as ± 2kb windows centered on Refseq transcription start site)
 | Chi-square pvalue |
 | adjusted pvalue |
 
-#### PDR
+### Calculate PDR
 If all the CpGs on a specific read are methylated, or all of the CpGs on a read are unmethylated, the read is classified as concordant; otherwise it is classified as discordant. At each CpG, the PDR is equal to the number of discordant reads that cover that location divided by the total number of read that cover that location. The PDR of promoter is given by averaging the values of individual CpGs, as calculated for all CpGs within the promoter of interest with read depth greater than 10 reads and that are covered by reads that contain at least 4 CpGs.
 
 `pdrCall_from_Bismark.py` can be used to call PDR of single CpG from bismark outputs (files starting with CpG_OB or CpG OT). The output file (`pdr.(sample).txt`) can be used to calculate promoter PDR. `pdr.(sample).txt` has the following columns
@@ -38,7 +36,7 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | DisReadCount |
 | NAReadCount |
 
-#### Make input matrix
+### Make input matrix
 `makeMatrix.R` is used to make input matrix. Input files are Z-score normalzied covariates matrix (`CVMatrix-normalized.rds`) including dhcrN, pdrN, gexpN and reptime. Also, `DMC.(sample).txt` and `pdr.(sample).txt` are needed for each tumor in the cohort. Output file includes the following columns:
 
 | Column | Description |
@@ -53,13 +51,13 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | depthT | promoter sequencing depth of tumor samples |
 | ncpgT | number of CpGs in promoter of tumor samples |
 
-## Usage
-pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
+### patient sepcific epidriver inference
+`pBeta.R`is used to estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
-pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
+### tumor prevalent epidriver inference
+`pCombine.R` is ued to determine if promoter hypermethylation if overrepresnted in patients (epidriver).
 
-## Output table
-
+### Output table
 | Column | Description |
 | ------ | ----------- |
 | hugo | Hugo gene symbol |
