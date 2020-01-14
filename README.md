@@ -55,7 +55,7 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 `pBeta.R`is used to estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
 ### Tumor prevalent epidriver inference
-`pCombine.R` is used to determine if promoter hypermethylation if overrepresnted in patients (epidriver).
+`pCombine.R` is used to determine if promoter hypermethylation if overrepresented in patients (epidriver).
 
 ### Output table
 | Column | Description |
