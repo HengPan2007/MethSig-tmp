@@ -8,8 +8,12 @@ pBeta: Estimate expected hypermethylation of tumor sample (expected DHcR) and ev
 #### Required inputs
 | Covariate | Description |
 | ------ | ----------- |
-| `dhcrN` | run module for processing `linear` or `circ` GoT (default: `linear`) |
-| `-f1/--fastqR1` | input R1.FASTQ FILE (input file can be in GZip format with .gz extension) |
-| `-f2/--fastqR2` | input R2.FASTQ FILE (input file can be in GZip format with .gz extension) |
-| `-c/--config` | input CONFIG FILE   (input file should be in tab-separated) |
+| dhcrN | promoter DHcR of normal samples |
+| pdrN | promoter PDR of normal samples |
+| gexpN | gene expression level of normal samples |
+| reptime | DNA replication time |
+| pdrT | promoter PDR of tumor samples |
+| depthT | promoter sequencing depth of tumor samples |
+| ncpgT | number of CpGs in promoter of tumor samples |
+
 pCombine: Determine if promoter hypermethylation if overrepresnted in patients (epidriver).
