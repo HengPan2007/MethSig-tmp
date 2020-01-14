@@ -51,11 +51,11 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | depthT | promoter sequencing depth of tumor samples |
 | ncpgT | number of CpGs in promoter of tumor samples |
 
-### patient sepcific epidriver inference
+### Patient sepcific epidriver inference
 `pBeta.R`is used to estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
-### tumor prevalent epidriver inference
-`pCombine.R` is ued to determine if promoter hypermethylation if overrepresnted in patients (epidriver).
+### Tumor prevalent epidriver inference
+`pCombine.R` is used to determine if promoter hypermethylation if overrepresnted in patients (epidriver).
 
 ### Output table
 | Column | Description |
