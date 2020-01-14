@@ -10,6 +10,9 @@ RRBS data were aligned and processed as described in our published book chapter 
 Promoter (defined as ± 2kb windows centered on Refseq transcription start site) hypermethylation was measured using differentially hypermethylated cytosine ratio (DHcR), defined as the ratio of hypermethylated cytosines (HCs) to the total number of promoter CpGs profiled. HCs of each sample were defined as CpGs at which DNAme is statistically higher than the average DNAme of control samples (false discovery rate=20%, Chi-squared test). Only CpGs with read depth greater than 10 reads were included in the analysis. RRBS data of matched normal tissues were used as control samples. 
 
 DMC.(sample).txt file can be used to calculate DHcR, which is derived from the pipeline described in our published book chapter mentioned above. DMC.(sample).txt has the following columns
+
+| Covariate | 
+| ------ |
 | chr |
 | pos |
 | numC in control |
