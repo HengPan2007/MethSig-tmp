@@ -11,6 +11,7 @@ Promoter (defined as ± 2kb windows centered on Refseq transcription start site)
 
 DMC.(sample).txt file can be used to calculate DHcR, which is derived from the pipeline described in our published book chapter mentioned above. DMC.(sample).txt has the following columns
 
+| Column |
 | ------ |
 | chr |
 | pos |
