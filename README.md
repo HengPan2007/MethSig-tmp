@@ -1,5 +1,5 @@
 # MethSig
-Process bisulfite sequencing data and performs DNAme driver inference.
+Process bisulfite sequencing data and performs DNA methylation cancer drivers (DNAme drivers) inference.
 
 ### RRBS data alignment and processing
 RRBS data were aligned and processed as described in our published book chapter (Pan et al., Cancer Systems Biology, 2018).
