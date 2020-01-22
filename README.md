@@ -69,10 +69,10 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 ### Example
 #### Step 1: Prepare input matrix
 
-`makeMatrix.R` loaded CVmatrix `/testdata/CVMatrix-normalized.rds` and built the input matrix based on an single example `SRR2069925`. Users need to prepare their own `CVMatrix-normalzied.rds`, `DMC.(sample).txt` and `pdr.(sample).txt` and replace `X` and `names.list`. Input matrix will be saved in `/testdata/input-matrix-example.rds` by default.
+`makeMatrix.R` loaded CVmatrix `/testdata/CVMatrix-normalized.rds` and built the input matrix based on an single example `SRR2069925`. Complete input matrix was preprocessed and provided as `/testdata/input-matrix.rds`. Users need to prepare their own `CVMatrix-normalzied.rds`, `DMC.(sample).txt` and `pdr.(sample).txt` and replace `X` and `names.list` in the script. Input matrix will be saved in `/testdata/input-matrix-example.rds` by default.
 
 #### Step 2: Patient specific hypermethylation inference
-`pBeta.R` loaded input matrix `input-matrix.rds` and output patient specific hypermethylation inference into `/testdata/pval-by-gene-pt.rds`. Users need to prepare their own input matrix based on the instruction from Step 1.
+`pBeta.R` loaded input matrix `/testdata/input-matrix.rds` and output patient specific hypermethylation inference into `/testdata/pval-by-gene-pt.rds`. Users need to prepare their own input matrix based on the instruction from Step 1.
 
 #### Step 3: Tumor prevalent DNAme driver inference
-`pCombine.R` loaded patient specific hypermethylation inference matrix `pval-by-gene-pt.rds` and output tumor prevalent DNAme driver inference into `/testdata/methSig-output.txt`. Users need to prepare their own input matrix based on the instruction from Step 1.
+`pCombine.R` loaded patient specific hypermethylation inference matrix `/testdata/pval-by-gene-pt.rds` and output tumor prevalent DNAme driver inference into `/testdata/methSig-output.txt`. Users need to prepare their own input matrix based on the instruction from Step 1.
