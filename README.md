@@ -1,5 +1,5 @@
 # MethSig
-Process bisulfite sequencing data and performs epidriver inference.
+Process bisulfite sequencing data and performs DNAme driver inference.
 
 ### RRBS data alignment and processing
 RRBS data were aligned and processed as described in our published book chapter (Pan et al., Cancer Systems Biology, 2018).
@@ -51,10 +51,10 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | depthT | promoter sequencing depth of tumor samples |
 | ncpgT | number of CpGs in promoter of tumor samples |
 
-### Patient sepcific epidriver inference
+### Patient sepcific hypermethylation inference
 `pBeta.R`is used to estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
-### Tumor prevalent epidriver inference
+### Tumor prevalent DNAme driver inference
 `pCombine.R` is used to determine if promoter hypermethylation if overrepresented in patients (epidriver).
 
 ### Output table
@@ -65,3 +65,8 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | sampleSize | number of samples with enough sequencing coverage (at least 5 CpGs with minimum 10X coverage) |
 | pvalue | combined p value |
 | padjust | Benjamini-Hochberg adjusted p value |
+
+### Example
+Step 1: Prepare input matrix
+Step 2: Patient specific hypermethylation inference
+Step 3: Tumor prevalent DNAme driver inference
