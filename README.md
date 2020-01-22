@@ -18,8 +18,8 @@ Promoter (defined as ± 2kb windows centered on Refseq transcription start site)
 | numC in tumor |
 | numC+numT in tumor |
 | methylation ratio at CpG as tumor methylation / control methylation |
-| Chi-square pvalue |
-| adjusted pvalue |
+| Chi-squared p-value |
+| adjusted p-value |
 
 ### Calculate PDR
 If all the CpGs on a specific read are methylated, or all of the CpGs on a read are unmethylated, the read is classified as concordant; otherwise it is classified as discordant. At each CpG, the PDR is equal to the number of discordant reads that cover that location divided by the total number of read that cover that location. The PDR of promoter is given by averaging the values of individual CpGs, as calculated for all CpGs within the promoter of interest with read depth greater than 10 reads and that are covered by reads that contain at least 4 CpGs.
