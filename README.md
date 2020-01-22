@@ -37,7 +37,7 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | NAReadCount |
 
 ### Make input matrix
-`makeMatrix.R` is used to make input matrix. Input files are Z-score normalized covariates matrix (`CVMatrix-normalized.rds`) including dhcrN, pdrN, gexpN and reptime. Also, `DMC.(sample).txt` and `pdr.(sample).txt` are needed for each tumor in the cohort. Output file includes the following columns:
+`makeMatrix.R` is used to make input matrix. Input files are Z-score normalized covariates matrix (`/testdata/CVMatrix-normalized.rds`) including dhcrN, pdrN, gexpN and reptime. Also, `DMC.(sample).txt` and `pdr.(sample).txt` are needed for each tumor in the cohort. Output file includes the following columns:
 
 | Column | Description |
 | ------ | ----------- |
