@@ -55,7 +55,7 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 `pBeta.R`is used to estimate expected hypermethylation of tumor sample (expected DHcR) and evaluate if observed DHcR is significantly higher than expected DHcR.
 
 ### Tumor prevalent DNAme driver inference
-`pCombine.R` is used to determine if promoter hypermethylation if overrepresented in patients (epidriver).
+`pCombine.R` is used to determine if promoter hypermethylation if overrepresented in patients (DNAme driver).
 
 ### Output table
 | Column | Description |
@@ -68,5 +68,6 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 
 ### Example
 Step 1: Prepare input matrix
+`makeMatrix.R` loaded CVmatrix 'CVMatrix-normalized.rds' and built the input matrix based on an single example `SRR2069925`. Users need to prepare their own `CVMatrix-normalzied.rds`, `DMC.(sample).txt` and `pdr.(sample).txt` and replace `X` and `names.list`. 
 Step 2: Patient specific hypermethylation inference
 Step 3: Tumor prevalent DNAme driver inference
