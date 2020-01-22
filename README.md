@@ -67,7 +67,10 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | padjust | Benjamini-Hochberg adjusted p value |
 
 ### Example
-Step 1: Prepare input matrix
+## Step 1: Prepare input matrix
+
 `makeMatrix.R` loaded CVmatrix 'CVMatrix-normalized.rds' and built the input matrix based on an single example `SRR2069925`. Users need to prepare their own `CVMatrix-normalzied.rds`, `DMC.(sample).txt` and `pdr.(sample).txt` and replace `X` and `names.list`. 
+
 Step 2: Patient specific hypermethylation inference
+
 Step 3: Tumor prevalent DNAme driver inference
