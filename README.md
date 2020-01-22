@@ -61,7 +61,7 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 | Column | Description |
 | ------ | ----------- |
 | hugo | Hugo gene symbol |
-| rank | rank of each promoter based on its combined p value |
+| rank | rank of each promoter based on its combined p-value |
 | sampleSize | number of samples with enough sequencing coverage (at least 5 CpGs with minimum 10X coverage) |
 | pvalue | combined p value |
 | padjust | Benjamini-Hochberg adjusted p value |
