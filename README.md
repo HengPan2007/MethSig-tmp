@@ -75,4 +75,4 @@ If all the CpGs on a specific read are methylated, or all of the CpGs on a read 
 `pBeta.R` loaded input matrix `/testdata/input-matrix.rds` and output patient specific hypermethylation inference into `/testdata/pval-by-gene-pt.rds`. Users need to prepare their own input matrix based on the instruction from Step 1.
 
 #### Step 3: Tumor prevalent DNAme driver inference
-`pCombine.R` loaded patient specific hypermethylation inference matrix `/testdata/pval-by-gene-pt.rds` and output tumor prevalent DNAme driver inference into `/testdata/methSig-output.txt`. Users need to prepare their own input matrix based on the instruction from Step 1.
+`pCombine.R` loaded patient specific hypermethylation inference matrix `/testdata/pval-by-gene-pt.rds` and output tumor prevalent DNAme driver inference into `/testdata/methSig-output.txt`. Users need to prepare their own input matrix based on the instruction from Step 2.
